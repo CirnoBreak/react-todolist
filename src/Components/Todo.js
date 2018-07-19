@@ -6,6 +6,7 @@ const Todo = ({ content }) => (
     <style jsx>{`
       a {
         text-decoration: none;
+        color: red;
       }
     `}</style>
   </li>
