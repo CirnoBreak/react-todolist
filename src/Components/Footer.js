@@ -2,7 +2,7 @@ import React from 'react'
 import Link from './Link'
 
 const Footer = () => (
-  <ul>
+  <div>
     <Link filter="all">
       全部
     </Link>
@@ -12,7 +12,7 @@ const Footer = () => (
     <Link filter="complete">
       已完成
     </Link>
-  </ul>
+  </div>
 )
 
 export default Footer
