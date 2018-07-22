@@ -27,7 +27,6 @@ export const todos = (state = [], action) => {
         todo(undefined, action)
       ]
     case 'TOGGLE_TODO':
-      console.table(state)
       return state.map(t => {
         return todo(t, action)
       })

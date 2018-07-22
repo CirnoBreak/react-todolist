@@ -1,16 +1,10 @@
 import React from 'react'
-
-const Link = ({ children }) => (
+import {
+  Link as RouterLink
+} from 'react-router-dom'
+const Link = ({ filter, children }) => (
   <React.Fragment>
-    <a href="/#">{children}</a>
-    <style jsx>{`
-      a {
-        text-decoration: none;
-        margin-right: 5px;
-        display: inline-block;
-      }
-      
-    `}</style>
+    <RouterLink style={{marginRight: '5px'}} className="link" to={"/" + filter}>{children}</RouterLink>
   </React.Fragment>
 )
 
